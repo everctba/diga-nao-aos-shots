@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Diga NÃO ao Shorts",
+  "version": "1.0.0",
+  "description": "Remove a seção de Shorts de quase todas as visualizações do YouTube.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
